@@ -28,4 +28,20 @@
 		<error-code>500</error-code>
 		<location>/ch02/exception.jsp</location>
 	</error-page>
+	<context-param>
+		<param-name>MysqlDriver</param-name>
+		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>MysqlURL</param-name>
+		<param-value>jdbc:mysql://localhost:3384/ja2pyc_jsp?serverTimezone=Asia/Seoul</param-value>
+	</context-param>
+	<context-param>
+		<param-name>MysqlId</param-name>
+		<param-value>ja2pyc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>MysqlPwd</param-name>
+		<param-value>1120@ja2pyc</param-value>
+	</context-param>
 </web-app>
