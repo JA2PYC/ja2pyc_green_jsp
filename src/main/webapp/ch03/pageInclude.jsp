@@ -20,7 +20,7 @@ Person pPerson2 = (Person) (pageContext.getAttribute("pagePerson"));
 	<div>
 		<h2>Include Test</h2>
 		<div>
-			<%=pInteger%>
+			<%-- =pInteger --%>
 		</div>
 	</div>
 	<hr>
