@@ -6,6 +6,5 @@
 <header>
 	<div class="header_title">JSP Header</div>
 	<div class='header_nav'>
-		<jsp:include page="./nav_menu.jsp"></jsp:include>
 	</div>
 </header>
