@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+nav.nav_menu {
+	
+}
+
+nav.nav_menu ul {
+	display: flex;
+}
+
+nav.nav_menu ul li {
+	padding: 1rem 1rem;
+}
