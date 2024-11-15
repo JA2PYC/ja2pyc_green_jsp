@@ -24,6 +24,15 @@
 				</ul>
 			</div>
 		</div>
+		<div>
+			<h2>인클루드 페이지에서 파라미터 확인</h2>
+			<div>
+				<jsp:include page="./inc/paramInclude.jsp">
+					<jsp:param value="강원도 영월" name="loc1" />
+					<jsp:param value="김삿갓면" name="loc2" />
+				</jsp:include>
+			</div>
+		</div>
 		<hr>
 	</main>
 	<jsp:include page="../footer.jsp"></jsp:include>
