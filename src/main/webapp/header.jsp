@@ -5,13 +5,7 @@
 <script type="text/javascript" src="/ja2pyc_green_jsp/js/header.js"></script>
 <header>
 	<div class="header_title">JSP Header</div>
-	<nav class="header_nav">
-		<ul>
-			<li><a href='/'>Root</a></li>
-			<li><a href='/ja2pyc_green_jsp'>JSP Project</a></li>
-			<li><a href='./'>Current</a></li>
-			<li><a href='../'>Parent</a></li>
-			<li><a href='' onclick='windows.location.reload()'>Refresh</a></li>
-		</ul>
-	</nav>
+	<div class='header_nav'>
+		<jsp:include page="./nav_menu.jsp"></jsp:include>
+	</div>
 </header>

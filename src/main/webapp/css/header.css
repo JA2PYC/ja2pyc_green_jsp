@@ -13,11 +13,3 @@ header {
 header .header_title {
 	font-size: 2rem;
 }
-
-header .header_nav ul {
-	display: flex;
-}
-
-header .header_nav ul li {
-	padding: 1rem 1rem;
-}
