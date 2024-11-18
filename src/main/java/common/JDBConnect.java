@@ -29,30 +29,30 @@ public class JDBConnect {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public JDBConnect(String driver, String url, String id, String pwd) {
 		try {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, id, pwd);
-			
+
 			System.out.println("DB 연결 성공 (인수 생성자)");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public JDBConnect(ServletContext application) {
 		try {
-			String driver =application.getInitParameter("MysqlDriver");
+			String driver = application.getInitParameter("MysqlDriver");
 			String url = application.getInitParameter("MysqlURL");
 			String id = application.getInitParameter("MysqlId");
 			String pwd = application.getInitParameter("MysqlPwd");
-			
+
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, id, pwd);
-			
+
 			System.out.println("DB 연결 성공 (Application 생성자)");
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -75,11 +75,11 @@ public class JDBConnect {
 				System.out.println("Close Connection");
 				con.close();
 			}
-			
+
 			System.out.println("JDBC 자연 해제");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
