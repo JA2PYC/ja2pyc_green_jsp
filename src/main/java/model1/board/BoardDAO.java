@@ -156,4 +156,18 @@ public class BoardDAO extends JDBConnect {
 		
 		return result;
 	}
+	
+	// Prevent Injection
+	public BoardDTO sanitizeDTO(BoardDTO dto) {
+		
+		dto.setTitle(sanitizeFilter(dto.getTitle()));
+		dto.setContent(sanitizeFilter(dto.getContent()));
+		return dto;
+	}
+	
+	// Injection Filter
+	public String sanitizeFilter(String str) {
+		// Reg Exp
+		return str;
+	}
 }
