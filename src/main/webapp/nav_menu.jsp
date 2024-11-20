@@ -5,7 +5,7 @@
 <nav class='nav_menu'>
 	<ul>
 		<li><a href='/'>Root</a></li>
-		<li><a href='/ja2pyc_green_jsp'>JSP Project</a></li>
+		<li><a href='<%=request.getContextPath()%>'>JSP Project</a></li>
 		<li><a href='./'>Current</a></li>
 		<li><a href='../'>Parent</a></li>
 		<li><a href='' onclick='windows.location.reload()'>Refresh</a></li>
