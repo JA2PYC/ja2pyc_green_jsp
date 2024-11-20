@@ -12,6 +12,8 @@
 		<welcome-file>default.jsp</welcome-file>
 		<welcome-file>default.htm</welcome-file>
 	</welcome-file-list>
+
+	<!-- Custom Context Parameter -->
 	<context-param>
 		<param-name>INIT_PARAM</param-name>
 		<param-value>web.xml에 저장한 초기화 매개변수</param-value>
@@ -44,9 +46,21 @@
 		<param-name>MysqlPwd</param-name>
 		<param-value>1120@ja2pyc</param-value>
 	</context-param>
+	<context-param>
+		<param-name>POSTS_PER_PAGE</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<param-name>PAGES_PER_BLOCK</param-name>
+		<param-value>5</param-value>
+	</context-param>
+
+	<!-- Custom Session -->
 	<session-config>
 		<session-timeout>20</session-timeout>
 	</session-config>
+
+	<!-- Custom Filter -->
 	<filter>
 		<filter-name>SetCharEncoding</filter-name>
 		<filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>

@@ -5,5 +5,6 @@
 <footer>
 	<div class='footer_title'>JPS Footer</div>
 	<div class='footer_nav'>
+		<jsp:include page="/nav_menu.jsp"></jsp:include>
 	</div>
 </footer>
