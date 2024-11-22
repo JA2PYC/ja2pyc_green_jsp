@@ -18,11 +18,8 @@
 					<li>이름 : ${ param.name }</li>
 					<li>성별 : ${param.gender }</li>
 					<li>학력 : ${param.grade }</li>
-					<li>취미 : ${paramValues.hobby[0] }
-					${paramValues.hobby[1] }
-					${paramValues.hobby[2] }
-					${paramValues.hobby[3] }
-					</li>
+					<li>취미 : ${paramValues.hobby[0] } ${paramValues.hobby[1] }
+						${paramValues.hobby[2] } ${paramValues.hobby[3] }</li>
 				</ul>
 			</div>
 		</div>
