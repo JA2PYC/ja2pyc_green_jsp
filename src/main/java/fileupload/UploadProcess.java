@@ -18,7 +18,7 @@ public class UploadProcess extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			String saveDirectory = getServletContext().getRealPath("/Uploads");
-			String originalFileName = FileUtil.uplaodFile(req, saveDirectory);
+			String originalFileName = FileUtil.uploadFile(req, saveDirectory);
 			String savedFileName = FileUtil.renameFile(saveDirectory, originalFileName);
 			insertMyFile(req, originalFileName, savedFileName);
 			resp.sendRedirect("fileList.jsp");
