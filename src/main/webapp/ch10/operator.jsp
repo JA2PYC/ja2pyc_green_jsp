@@ -122,9 +122,9 @@ pageContext.setAttribute("num4", "8");
 			<h2>null Operator</h2>
 			<div>
 				<ul>
-					<li>null + 10 : ${null + 10 }</li>
-					<li>nullStr + 10 : ${nullStr + 10 }</li>
-					<li>param.noVar > 10 : ${param.noVar > 10 }</li>
+					<li>null + 10 : \${null + 10 }</li>
+					<li>nullStr + 10 : \${nullStr + 10 }</li>
+					<li>param.noVar > 10 : \${param.noVar > 10 }</li>
 				</ul>
 			</div>
 		</div>
